@@ -52,8 +52,35 @@ int main() {
 
         }
         
+        //Estrutura for para a saída da matriz do Tabuleiro 
         for (int j = 0; j <= 9; j++)        
         {
+
+            //implementação do navio 1 na diagonal com estruturas condicionais
+            if( i == 5 && j == 1 ){
+                tabuleiro[i][j] = 3;
+            }
+
+            if( i == 6 && j == 2 ){
+                tabuleiro[i][j] = 3;
+            }
+
+            if( i == 7 && j == 3 ){
+                tabuleiro[i][j] = 3;
+            }
+
+            //implementação do navio 2 na diagonal com estruturas condicionais
+            if( i == 1 && j == 8 ){
+                tabuleiro[i][j] = 3;
+            }
+
+            if( i == 2 && j == 7 ){
+                tabuleiro[i][j] = 3;
+            }
+
+            if( i == 3 && j == 6 ){
+                tabuleiro[i][j] = 3;
+            }
 
             printf("%d ", tabuleiro[i][j]);
 
